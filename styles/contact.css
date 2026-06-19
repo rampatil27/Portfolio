@@ -116,6 +116,7 @@ textarea {
   padding: 0.7rem;
   border-radius: 5px;
   color: var(--white);
+  width: 100%;
 }
 
 input::placeholder,

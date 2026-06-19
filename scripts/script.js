@@ -1,9 +1,13 @@
 const toggle = document.getElementById("menu-toggle");
 
-if (toggle && toggle.checked) {
-  document.body.classList.add("no-scroll");
-} else {
-  document.body.classList.remove("no-scroll");
+if (toggle) {
+  toggle.addEventListener("change", (e) => {
+    if (e.target.checked) {
+      document.body.classList.remove("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll")
+    }
+  });
 }
 
 const words = [
@@ -72,5 +76,10 @@ navlinks.forEach((link) => {
         tab.classList.remove("active");
       }
     });
+
+    if (toggle) {
+      toggle.checked = false;
+      document.body.classList.remove("no-scroll");
+    }
   });
 });
