@@ -110,6 +110,10 @@ aside h2 span {
   color: var(--green);
 }
 
+.currently-box span {
+  color: var(--green);
+}
+
 .currently-list,
 .education-list,
 .my-info {
